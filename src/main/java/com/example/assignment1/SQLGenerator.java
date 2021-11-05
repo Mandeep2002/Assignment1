@@ -1,6 +1,6 @@
 package com.example.assignment1;
 
-import javafx.application.Preloader;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,10 +11,6 @@ import java.util.Scanner;
 
 public class SQLGenerator {
 
-    /**
-     * This method will create random camera sales data that matches the pattern
-     * INSERT INTO cameraSales (cameraId, dateSold) VALUES (7, '2021-04-26');
-     */
     public static void createSQL()
     {
         //create a random number generator
@@ -26,7 +22,7 @@ public class SQLGenerator {
         )
         {
             //loop 5000 times to create random records
-            for (int i=1; i<=3000; i++)
+            for (int i=1; i<=5000; i++)
             {
                 LocalDate dateSold = LocalDate.now().minusDays(rng.nextInt(1095));
                 formatter.format("INSERT INTO PhoneSales_1 (ID, dateSold) VALUES (%d, '%s');%n",rng.nextInt(11)+1,dateSold);

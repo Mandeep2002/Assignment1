@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="735.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.TableViewController">
+   <children>
+      <Button layoutX="252.0" layoutY="528.0" mnemonicParsing="false" onAction="#applePhone" prefHeight="53.0" prefWidth="183.0" text="Bar Chart view" />
+      <TableView fx:id="tableview" layoutX="70.0" layoutY="120.0" prefHeight="391.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="73.33333587646484" text="ID" />
+          <TableColumn fx:id="company_namecolumn" prefWidth="160.0000457763672" text="Company_Name" />
+            <TableColumn fx:id="modelcolumn" prefWidth="74.6666259765625" text="Model" />
+
+                        <TableColumn fx:id="saleyearcolumn" prefWidth="75.0" text="SaleYear" />
+            <TableColumn fx:id="pricecolumn" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="countrycolumn" prefWidth="57.333343505859375" text="Country" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="108.0" layoutY="32.0" prefHeight="58.0" prefWidth="427.0" text="Apple Phone Sales Table" textFill="#a63e12">
+         <font>
+            <Font name="Gabriola" size="48.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,16 @@
+.root{
+
+    -fx-background-color: #CCCCFF;
+    -fx-font-family: Gabriola;
+    -fx-font-size: 28px;
+
+}
+
+#header{
+    -fx-font-size: 50px;
+    -fx-text-fill: #FF7F50;
+}
+.setLabel{
+    -fx-font-color: red;
+}
+

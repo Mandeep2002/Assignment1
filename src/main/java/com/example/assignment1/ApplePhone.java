@@ -1,7 +1,7 @@
 package com.example.assignment1;
 
 public class ApplePhone {
-    private int Id;
+    private int ID;
     private String Company_Name;
     private String Model;
     private int sales;
@@ -11,19 +11,18 @@ public class ApplePhone {
 
 
     public ApplePhone(int Id, String Company_Name, String Model, int sales, int SaleYear, double Price, String Country) {
-        this.Id = Id;
+        this.ID = Id;
         this.Company_Name = Company_Name;
         this.Model = Model;
         this.sales = sales;
         this.SaleYear = SaleYear;
         this.Price = Price;
         this.Country = Country;
+
     }
 
-
-
-    public int getId() {
-        return Id;
+    public int getID() {
+        return ID;
     }
 
     public String getCompany_Name() {
@@ -49,12 +48,6 @@ public class ApplePhone {
         return Country;
     }
 
-    public void setId(int Id) {
-        if (Id>0)
-            this.Id = Id;
-        throw new IllegalArgumentException("Id must be greater than 0");
-
-    }
 
     public void setCompany_Name(String Company_Name) {
         this.Company_Name = Company_Name;
@@ -79,7 +72,7 @@ public class ApplePhone {
     public String toString()
     {
         return ("ApplePhone Info" + " " + "\n" +
-                "Id=" + getId() + "\n" + ""+ "Company_Name=" + getCompany_Name() + "\n" +
+                "Id=" + getID() + "\n" + ""+ "Company_Name=" + getCompany_Name() + "\n" +
                 "Model=" + getModel() + "\n" +"sales=" + getsales() + "\n" + ""+ "SaleYear=" + getSaleYear() + "\n" +
                 "Price=" + getPrice() + "\n" + ""+ "Country=" + getCountry());
     }
